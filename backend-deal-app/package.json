@@ -1,0 +1,25 @@
+{
+  "name": "deal-app",
+  "version": "1.0.0",
+  "description": "Manage backend data of the deals of users",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"node build/index.js\""
+  },
+  "author": "Allan DEBEVE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gfaim/deal-app/issues"
+  },
+  "homepage": "https://github.com/Gfaim/deal-app#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "fastify": "^3.27.2",
+    "mongodb": "^4.4.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/node": "^17.0.20",
+    "typescript": "^4.5.5"
+  }
+}
