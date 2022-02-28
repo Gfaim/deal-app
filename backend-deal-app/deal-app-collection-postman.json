@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "a81017b8-df90-41ca-b346-c47cdf1854fc",
+		"name": "Deal-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add deal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"label\": \"Lala\",\n    \"amount\": 45,\n    \"detail\": \"Big transaction with the VIP client\",\n    \"date\": \"2011-10-10T14:48:00.000+09:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/deal",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"deal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get deal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/deal?name=Lala",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"deal"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Lala"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get deal detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/deal/detail?name=Lala",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"deal",
+						"detail"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Lala"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get deals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/deals?limit=4",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"deals"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete deal",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/deal?id=xxxxxx",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"deal"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "xxxxxx"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch deal",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"xxxxxx\",\n    \"label\": \"Oof\",\n    \"amount\": 45,\n    \"detail\": \"Big transaction with the VIP client\",\n    \"date\": \"2011-10-10T14:48:00.000+09:00\"\n}"
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/deal",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"deal"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": ""
+		}
+	]
+}
