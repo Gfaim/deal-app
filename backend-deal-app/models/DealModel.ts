@@ -1,7 +1,7 @@
 import { Static, Type } from '@sinclair/typebox'
 
 const DealSchema = Type.Object({
-    id: Type.Optional(Type.String({ format: 'uuid' })),
+    id: Type.Optional(Type.String()),
     label: Type.String(),
     amount: Type.Number(),
     date: Type.String({ format: 'date-time' }),
