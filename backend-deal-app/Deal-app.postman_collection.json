@@ -37,7 +37,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{BASE_URL}}/deal?name=Lala",
+					"raw": "{{BASE_URL}}/deal?id=6218ce9b5049bb9d4ea306fd",
 					"host": [
 						"{{BASE_URL}}"
 					],
@@ -46,8 +46,8 @@
 					],
 					"query": [
 						{
-							"key": "name",
-							"value": "Lala"
+							"key": "id",
+							"value": "6218ce9b5049bb9d4ea306fd"
 						}
 					]
 				}
@@ -84,18 +84,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{BASE_URL}}/deals?limit=4",
+					"raw": "{{BASE_URL}}/deals",
 					"host": [
 						"{{BASE_URL}}"
 					],
 					"path": [
 						"deals"
-					],
-					"query": [
-						{
-							"key": "limit",
-							"value": "4"
-						}
 					]
 				}
 			},
