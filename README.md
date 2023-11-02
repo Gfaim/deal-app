@@ -35,7 +35,3 @@ Les armes que tu utiliseras pour créer cette application sont libres, pour info
 - NodeJs (fastify) / MongoDB pour le back
 - React pour le front
 - Typescript
-
-Mais tu peux utiliser n'importe quelle technologie avec laquelle tu es le plus à l'aise.
-
-L'application devra être testée unitairement le plus possible.
